@@ -5,7 +5,7 @@ const configData = require('./config');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
-const { DB_HOST, DB_ME, DB_NAME, DB_PASS } = configData.envdata;
+const { DB_HOST, DB_ME, DB_NAME, DB_PASS, PORT } = configData.envdata;
 app.use(express.json());
 app.use(cors());
 
@@ -86,6 +86,6 @@ var profile = express.Router();
 require('./Routes/profile')(profile, knex, jwt);
 app.use('/', profile);
 
-app.listen(4000, () => {
-    console.log(`your app is listening at port ${4000}`);
+app.listen(PORT, () => {
+    console.log(`your app is listening at port ${PORT}`);
 })

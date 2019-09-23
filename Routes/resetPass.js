@@ -32,9 +32,7 @@ module.exports = function(resetPass, knex, jwt) {
                 return res.send(false);
             }
             let tokenData = JSON.parse(authData.allData);
-            // console.log('whole', tokenData);
-            // console.log(typeof(tokenData));
-            // console.log(tokenData.email);
+
             if (!err) {
                 knex('user')
                 .update(newPass)
