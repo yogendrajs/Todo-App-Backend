@@ -57,7 +57,7 @@ module.exports = function(forgotPass, knex, nodemailer, jwt) {
                         <p style="margin: 0 0 16px;">Email: ${data[0].email}</p>
                         <p style="margin: 0 0 16px;">If you didn't make this request, just ignore this email. If you'd like to proceed:</p>
                         <p style="margin: 0 0 16px;">
-                           <a class="link" href="http://localhost:5000/resetpass?key=${data[0].token}&id=${data[0].userId}" style="font-weight: normal; text-decoration: underline; color: #1976d2;">		Click here to reset your password	</a>
+                           <a class="link" href="http://localhost:3000/resetpass?key=${data[0].token}&id=${data[0].userId}" style="font-weight: normal; text-decoration: underline; color: #1976d2;">		Click here to reset your password	</a>
                         </p>
                         <p style="margin: 0 0 16px;">Thanks for reading.</p>
                         
