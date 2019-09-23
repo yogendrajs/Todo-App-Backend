@@ -1,0 +1,38 @@
+{
+  "name": "todobackend",
+  "version": "1.0.0",
+  "description": "This is the backend of my Todo-Frontend App that has been built on ReactJS. [Here](https://github.com/yogendra3236/Todo-React-App) is the link of my frontend repository. In this Backend part, I have used Axios-API to fetch and send data to the frontend and vice-versa. I have used ExpressJS to do so. I have also used JWT-authentication to verify the user. However, I didn't make any signup endpoint. Only Login endpoint is there. <br> In this App, you can add, edit, delete and mark your Todo as done/undone.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogendra3236/Todo-React-App-Backend.git"
+  },
+  "author": "yogendra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yogendra3236/Todo-React-App-Backend/issues"
+  },
+  "homepage": "https://github.com/yogendra3236/Todo-React-App-Backend#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "google-id-token-verifier": "^0.2.3",
+    "googleapis": "^43.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.4",
+    "mysql": "^2.17.1",
+    "nodemailer": "^6.3.0",
+    "reactjs-localstorage": "0.0.7",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.1.0"
+  }
+}
