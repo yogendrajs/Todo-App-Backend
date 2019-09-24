@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const jwt = require('jsonwebtoken');
 const configData = require('./config');
-const nodemailer = require('nodemailer');
+const nodeoutlook = require('nodejs-nodemailer-outlook');
 const cors = require('cors');
 
 const { DB_HOST, DB_ME, DB_NAME, DB_PASS, PORT } = configData.envdata;
@@ -75,7 +75,7 @@ require('./Routes/signup')(signup, knex, jwt);
 app.use('/', signup);
 
 var forgotPass = express.Router();
-require('./Routes/forgotPass')(forgotPass, knex, nodemailer, jwt);
+require('./Routes/forgotPass')(forgotPass, knex, nodeoutlook, jwt);
 app.use('/', forgotPass);
 
 var resetPass = express.Router();
