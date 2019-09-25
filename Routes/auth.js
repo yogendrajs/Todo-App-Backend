@@ -33,7 +33,7 @@ module.exports = function(auth, knex, jwt) {
         // console.log(req.body.id_token);
         let IdToken = req.body.tokenObj.id_token;
         // console.log(req.body.imgUrl);
-        var clientId = '536299356769-6revlp8ocmd1ffr53gm5knf1icsknh37.apps.googleusercontent.com';
+        var clientId = config.GOOGLE_CLIENT_ID;
         verifier.verify(IdToken, clientId, function (err, tokenInfo) {
             if (!err) {
               // use tokenInfo in here.
